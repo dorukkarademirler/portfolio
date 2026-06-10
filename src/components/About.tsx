@@ -25,7 +25,7 @@ export default function About() {
 
         <div className="mt-12 grid md:grid-cols-2 gap-12">
           <FadeIn delay={100}>
-            <div className="flex items-start gap-5">
+            <div className="flex flex-col sm:flex-row items-start gap-5">
               {/* Circular profile photo */}
               <div className="relative shrink-0">
                 {/* eslint-disable-next-line @next/next/no-img-element */}

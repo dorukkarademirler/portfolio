@@ -60,7 +60,7 @@ export default function Robot() {
       <div style={{ display: "flex", alignItems: "flex-start" }}>
 
         {/* Left arm (static) */}
-        <Arm animated={false} />
+        <Arm animated={false} side="left" />
 
         {/* Torso */}
         <div style={{
@@ -100,7 +100,7 @@ export default function Robot() {
         </div>
 
         {/* Right arm (waving) */}
-        <Arm animated={true} />
+        <Arm animated={true} side="right" />
       </div>
 
       {/* ── Legs ── */}
@@ -141,18 +141,18 @@ export default function Robot() {
 }
 
 /* Shoulder ball + upper arm + hand as one rotatable unit */
-function Arm({ animated }: { animated: boolean }) {
+function Arm({ animated, side }: { animated: boolean; side: "left" | "right" }) {
   return (
-    <div style={{ paddingTop: 8 }}>
-      {/* Fixed shoulder socket on torso side — stays put */}
+    <div style={{ paddingTop: 8, display: "flex", flexDirection: "column", alignItems: side === "left" ? "flex-end" : "flex-start" }}>
+      {/* Fixed shoulder socket — sits against the torso edge */}
       <div style={{
         width: 13, height: 13, borderRadius: "50%",
         background: MID,
         border: `2px solid ${LITE}`,
         boxShadow: `0 0 8px ${GLOW}`,
-        marginLeft: animated ? -4 : -4,
         marginBottom: -6,
         position: "relative", zIndex: 2,
+        ...(side === "left" ? { marginRight: -4 } : { marginLeft: -4 }),
       }} />
 
       {/* Arm + hand — rotates from the top (shoulder) */}

@@ -62,7 +62,7 @@ function ProjectCard({
               href={href}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Live site"
+              aria-label="View link"
               className="text-[var(--color-muted)] hover:text-[var(--color-accent)] transition-colors"
             >
               <ExternalIcon />

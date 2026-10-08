@@ -73,8 +73,8 @@ export const projects = [
     description:
       "Analyzed a vulnerable C account-management application, identifying and documenting 15 security vulnerabilities spanning path traversal, buffer handling, authentication, password storage, and transaction validation. Developed and tested fixes for 11 issues using input validation, safer string handling, account identity verification, password hashing, and file-operation error handling, then reproduced each vulnerability in a controlled environment to assess impact against the CIA triad.",
     tags: ["C", "Linux", "OpenSSL", "Secure Coding"],
-    href: "#",
-    repo: "#",
+    href: "/files/csc347-security-report.pdf",
+    repo: "/files/csc347-vulnerable-account.c",
     date: "Fall 2025",
     current: false,
   },

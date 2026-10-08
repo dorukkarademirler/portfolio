@@ -69,6 +69,16 @@ export const projects = [
     current: true,
   },
   {
+    title: "Security Vulnerability Assessment & Remediation",
+    description:
+      "Analyzed a vulnerable C account-management application, identifying and documenting 15 security vulnerabilities spanning path traversal, buffer handling, authentication, password storage, and transaction validation. Developed and tested fixes for 11 issues using input validation, safer string handling, account identity verification, password hashing, and file-operation error handling, then reproduced each vulnerability in a controlled environment to assess impact against the CIA triad.",
+    tags: ["C", "Linux", "OpenSSL", "Secure Coding"],
+    href: "#",
+    repo: "#",
+    date: "Fall 2025",
+    current: false,
+  },
+  {
     title: "CourseBind Website",
     description:
       "Full-stack educational platform designed to enhance student productivity. Built as part of a five-person Agile team, from concept to deployment.",

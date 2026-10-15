@@ -2,7 +2,7 @@ export const meta = {
   name: "Doruk Karademirler",
   title: "Software Engineering Student & Developer",
   tagline:
-    "CS student at the University of Toronto with 5 years of experience building problem-solving algorithms, compiler toolchains, and full-stack applications.",
+    "CS student at the University of Toronto with 6 years of experience in computer-aided design, problem-solving algorithms, and CI/CD pipelines for compiler toolchains.",
   email: "doruk.karademirler@mail.utoronto.ca",
   phone: "647-271-1591",
   github: "https://github.com/dorukkarademirler",
@@ -14,7 +14,7 @@ export const meta = {
 export const skills = [
   "Java", "Python", "JavaScript", "TypeScript",
   "C", "React", "PHP", "SQL",
-  "Git", "CI/CD", "GCC / LLVM", "R",
+  "CSS", "Git", "CI/CD", "GCC / LLVM", "R",
 ];
 
 export const education = [

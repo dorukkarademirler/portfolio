@@ -69,10 +69,11 @@ export default function About() {
                   in {meta.location}.
                 </p>
                 <p>
-                  I have 5 years of experience in computer-aided design and
-                  building problem-solving algorithms. My work spans compiler
-                  toolchains at Qualcomm, full-stack web development, and
-                  data-driven research in economics and machine learning.
+                  I have 6 years of experience in computer-aided design and
+                  developing problem-solving algorithms. My work spans CI/CD
+                  pipelines for compiler toolchains at Qualcomm, full-stack web
+                  development, and using technical expertise to analyze and
+                  interpret economic data.
                 </p>
                 <p>
                   I care about getting things right. I pay close attention to

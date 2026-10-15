@@ -64,7 +64,7 @@ export default function Hero() {
                 Get in Touch
               </a>
               <a
-                href="/resume.pdf"
+                href="/files/Resume.pdf"
                 download="Doruk_Karademirler_Resume.pdf"
                 className="px-6 py-3 font-mono text-sm tracking-wider uppercase border border-[var(--color-border)] text-[var(--color-muted)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-all duration-200 flex items-center gap-2"
               >

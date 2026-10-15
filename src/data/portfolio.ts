@@ -33,6 +33,7 @@ export const education = [
 
 export const certifications = [
   {
+    title: "Google Cybersecurity Certificate",
     name: "Google Cybersecurity Professional Certificate",
     issuer: "Google",
     issued: "Oct. 2026",

@@ -42,27 +42,28 @@ export default function Education() {
             </FadeIn>
           ))}
 
-          <FadeIn delay={education.length * 100}>
-            <div className="card-glow rounded-sm p-6 bg-[#080b10]">
-              <h3 className="text-white font-semibold text-lg mb-4">Certifications</h3>
-              <ul className="space-y-4">
-                {certifications.map((cert, i) => (
-                  <li key={i} className="flex flex-wrap items-start justify-between gap-2">
-                    <div>
-                      <p className="text-[var(--color-text)] text-sm">{cert.name}</p>
-                      <p className="text-[var(--color-accent)] font-mono text-sm mt-0.5">{cert.issuer}</p>
-                    </div>
-                    <div className="text-right">
-                      <p className="font-mono text-xs text-[var(--color-muted)]">Issued {cert.issued}</p>
-                      <p className="font-mono text-xs text-[var(--color-muted)] mt-0.5">
-                        Credential ID: {cert.credentialId}
-                      </p>
-                    </div>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </FadeIn>
+          {certifications.map((cert, i) => (
+            <FadeIn key={cert.credentialId} delay={(education.length + i) * 100}>
+              <div className="card-glow rounded-sm p-6 bg-[#080b10]">
+                <h3 className="text-white font-semibold text-lg">{cert.title}</h3>
+                <ul className="mt-4 space-y-2">
+                  {[
+                    `${cert.name}, ${cert.issuer}`,
+                    `Issued ${cert.issued}`,
+                    `Credential ID: ${cert.credentialId}`,
+                  ].map((detail, j) => (
+                    <li
+                      key={j}
+                      className="flex items-start gap-2 text-[var(--color-text)] text-sm leading-relaxed"
+                    >
+                      <span className="text-[var(--color-accent)] mt-1 text-xs shrink-0">▸</span>
+                      {detail}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </FadeIn>
+          ))}
         </div>
       </div>
     </section>

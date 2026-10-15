@@ -1,4 +1,4 @@
-import { education } from "@/data/portfolio";
+import { certifications, education } from "@/data/portfolio";
 import { SectionLabel } from "./About";
 import FadeIn from "./FadeIn";
 
@@ -41,6 +41,28 @@ export default function Education() {
               </div>
             </FadeIn>
           ))}
+
+          <FadeIn delay={education.length * 100}>
+            <div className="card-glow rounded-sm p-6 bg-[#080b10]">
+              <h3 className="text-white font-semibold text-lg mb-4">Certifications</h3>
+              <ul className="space-y-4">
+                {certifications.map((cert, i) => (
+                  <li key={i} className="flex flex-wrap items-start justify-between gap-2">
+                    <div>
+                      <p className="text-[var(--color-text)] text-sm">{cert.name}</p>
+                      <p className="text-[var(--color-accent)] font-mono text-sm mt-0.5">{cert.issuer}</p>
+                    </div>
+                    <div className="text-right">
+                      <p className="font-mono text-xs text-[var(--color-muted)]">Issued {cert.issued}</p>
+                      <p className="font-mono text-xs text-[var(--color-muted)] mt-0.5">
+                        Credential ID: {cert.credentialId}
+                      </p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </FadeIn>
         </div>
       </div>
     </section>

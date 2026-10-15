@@ -31,6 +31,15 @@ export const education = [
   },
 ];
 
+export const certifications = [
+  {
+    name: "Google Cybersecurity Professional Certificate",
+    issuer: "Google",
+    issued: "Oct. 2026",
+    credentialId: "MYTC3W2E8NGA",
+  },
+];
+
 export const experience = [
   {
     role: "Software Toolchains Engineering Intern",
